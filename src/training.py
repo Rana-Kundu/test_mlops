@@ -144,10 +144,9 @@ def hyper_parameter_tuning(X_train, y_train):
     model_tuned.fit( X_train, y_train)
     return model_tuned,best_params
 
-# path = "C:\\Users\\a873694\\code\\vscode_code\my_mlops_github_3\\data\source\\banking.csv"
 
 if __name__=="__main__":
-    path = ".\\data\source\\banking.csv"
+    path = "./data/source/banking.csv"
     data = load_data(path)
     data.head()
     cleaned_data = data_cleaning(data)
